@@ -32,6 +32,7 @@ const BoxProductsCart = ({ product }) => {
           </BoxDesc>
           <IconDelete
             src={delete_icon}
+            alt={delete_icon}
             onClick={() => remove_cart_item(product.id)}
           />
         </TextProduct>
