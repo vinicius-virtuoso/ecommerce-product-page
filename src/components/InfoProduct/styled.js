@@ -10,8 +10,9 @@ export const BoxText = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  @media (min-width: 768px) {
+  @media (min-width: 968px) {
     gap: 2rem;
+    max-width: 90%;
   }
 `;
 export const SupTitle = styled.h4`
@@ -20,7 +21,7 @@ export const SupTitle = styled.h4`
   font-size: 1.3rem;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: 968px) {
     font-size: 1rem;
   }
 `;
@@ -28,7 +29,7 @@ export const SupTitle = styled.h4`
 export const Title = styled.h1`
   font-size: 2rem;
   color: var(--Black);
-  @media (min-width: 768px) {
+  @media (min-width: 968px) {
     font-size: 2.5rem;
   }
 `;
@@ -44,7 +45,7 @@ export const BoxPrice = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 968px) {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -79,7 +80,7 @@ export const OldPriced = styled.span`
   font-weight: 700;
   opacity: 0.5;
 
-  @media (min-width: 768px) {
+  @media (min-width: 968px) {
     font-size: 1rem;
   }
 `;
@@ -87,10 +88,10 @@ export const OldPriced = styled.span`
 export const BoxGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
+  gap: 1rem;
 
-  @media (min-width: 768px) {
-    grid-template-columns: 40% 1fr;
-    gap: 1rem;
+  @media (min-width: 968px) {
+    grid-template-columns: 35% 1fr;
   }
 `;
 

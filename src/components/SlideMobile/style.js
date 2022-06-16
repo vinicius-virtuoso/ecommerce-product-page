@@ -6,7 +6,7 @@ export const ContainerSlide = styled.div`
   height: 100%;
   max-height: 40%;
 
-  @media (min-width: 768px) {
+  @media (min-width: 968px) {
     display: none;
   }
 `;

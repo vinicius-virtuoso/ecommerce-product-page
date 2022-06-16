@@ -21,7 +21,7 @@ export const HeaderContainer = styled(Container)`
   padding: 0.75rem 1.5rem;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: 968px) {
     border-bottom: 1px solid var(--grayish-blue);
     padding: 0;
     align-items: initial;
@@ -30,7 +30,7 @@ export const HeaderContainer = styled(Container)`
 export const Bars = styled.div`
   width: 25px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 968px) {
     display: none;
   }
 `;
@@ -43,7 +43,7 @@ export const Logo = styled.img`
   object-position: center;
   object-fit: contain;
 
-  @media (min-width: 768px) {
+  @media (min-width: 968px) {
     max-width: 170px;
     height: 100%;
   }
@@ -54,7 +54,7 @@ export const Box = styled.div`
   gap: 0.5rem;
   position: initial;
 
-  @media (min-width: 768px) {
+  @media (min-width: 968px) {
     gap: 3rem;
     position: relative;
   }
@@ -71,10 +71,13 @@ export const BoxIcon = styled.div`
   width: 25px;
   height: 25px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  @media (min-width: 768px) {
-    width: 30px;
-    height: 30px;
+  @media (min-width: 968px) {
+    width: 25px;
+    height: 25px;
   }
 `;
 export const IconAvatar = styled.img`
@@ -82,12 +85,14 @@ export const IconAvatar = styled.img`
   height: 30px;
   border-radius: 50%;
   border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
 
   &:hover {
     border: 2px solid var(--orange);
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 968px) {
     width: 50px;
     height: 50px;
   }
@@ -127,7 +132,7 @@ export const Menu = styled.nav`
       ? "visibility: visible;"
       : "visibility: hidden; pointer-events: none;"};
 
-  @media (min-width: 768px) {
+  @media (min-width: 968px) {
     position: initial;
     display: flex;
     width: 100%;
@@ -154,7 +159,7 @@ export const NavList = styled.ul`
   transition: all 0.2s ease-in;
   ${(props) => (props.isOpen ? "width: 65%;" : "width: 0%;padding: 100px 0;")};
 
-  @media (min-width: 768px) {
+  @media (min-width: 968px) {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -172,7 +177,7 @@ export const NavLink = styled.li`
   position: relative;
   transition: all 0.2s ease-in;
 
-  @media (min-width: 768px) {
+  @media (min-width: 968px) {
     font-size: 1rem;
     color: var(--dark-grayish-blue);
     font-weight: 400;
@@ -209,7 +214,7 @@ export const Link = styled.a`
   align-items: center;
   transition: all 0.2s ease;
 
-  @media (min-width: 768px) {
+  @media (min-width: 968px) {
     font-size: 1rem;
     color: var(--dark-grayish-blue);
     font-weight: 400;

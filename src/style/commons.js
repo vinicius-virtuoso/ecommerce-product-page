@@ -5,6 +5,13 @@ export const AppComponent = styled.div`
   height: 100%;
   min-height: 100vh;
   background: var(--white);
+
+  display: grid;
+  grid-template-rows: 4.5rem 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-rows: 6rem 1fr;
+  }
 `;
 
 export const Container = styled.div`
@@ -39,14 +46,16 @@ export const FlexColumn = styled.div`
 
   flex-direction: column;
   height: calc(100vh - 4.5rem);
+  flex: 1;
 
-  @media (min-width: 768px) {
+  @media (min-width: 968px) {
     max-width: 90%;
     margin: 0 auto;
     flex-direction: row;
     align-items: center;
     gap: 5rem;
-    padding: 0 3rem;
-    height: calc(100vh - 6rem);
+    padding: 5rem 2rem;
+    height: 100%;
+    flex: 1;
   }
 `;

@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import logo_img from "../../assets/logo/logo.svg";
 import menu_icon from "../../assets/icons/icon-menu.svg";
 import close_icon from "../../assets/icons/icon-close.svg";
-// import cart_icon from "../../assets/icons/icon-cart.svg";
+
 import avatar from "../../assets/avatar/image-avatar.png";
 
 import {
@@ -22,7 +22,7 @@ import {
 } from "./style";
 import { CartContext } from "../../context/providers/cart";
 import Cart from "../Cart";
-import IconCart from "../IconCart";
+import { IconCart } from "../Icons";
 
 const Header = () => {
   const { cart, modal_cart, showCart } = useContext(CartContext);

@@ -20,10 +20,10 @@ import {
 } from "./styled";
 import plus_icon from "../../assets/icons/icon-plus.svg";
 import minus_icon from "../../assets/icons/icon-minus.svg";
-import IconCart from "../IconCart";
+import { IconCart } from "../Icons";
 
 const InfoProduct = ({ product }) => {
-  const [volume, setVolume] = useState(0);
+  const [volume, setVolume] = useState(1);
   const { add_cart } = useContext(CartContext);
 
   const addQuant = () => {
@@ -32,7 +32,7 @@ const InfoProduct = ({ product }) => {
     }
   };
   const subQuant = () => {
-    if (volume > 0) {
+    if (volume > 1) {
       setVolume(volume - 1);
     }
   };
@@ -62,11 +62,7 @@ const InfoProduct = ({ product }) => {
               <img src={plus_icon} alt="+" />
             </QuantAdd>
           </BoxQuant>
-          <Button
-            onClick={() =>
-              volume > 0 ? add_cart({ ...product, quant: volume }) : null
-            }
-          >
+          <Button onClick={() => add_cart({ ...product, quant: volume })}>
             <IconCart color="#ffffff" />
             Add to cart
           </Button>
