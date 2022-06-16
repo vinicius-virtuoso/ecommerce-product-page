@@ -35,7 +35,7 @@ const Header = () => {
           <Bars onClick={() => setIsOpen(!isOpen)}>
             <IconMenu src={isOpen ? close_icon : menu_icon} />
           </Bars>
-          <Logo src={logo_img} />
+          <Logo src={logo_img} alt="logo" />
           <Menu isOpen={isOpen}>
             <NavList isOpen={isOpen}>
               <NavLink>
@@ -64,7 +64,7 @@ const Header = () => {
             ) : null}
           </BoxIcon>
           {showCart ? <Cart /> : ""}
-          <IconAvatar src={avatar} />
+          <IconAvatar src={avatar} alt="avatar" />
         </Box>
       </HeaderContainer>
     </HeaderComponent>

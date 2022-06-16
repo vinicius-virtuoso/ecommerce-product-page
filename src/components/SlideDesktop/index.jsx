@@ -11,6 +11,7 @@ const SlideDesktop = ({ image_all }) => {
       <SlideGrid>
         <ImageLager
           src={image_all.img[active]}
+          alt={image_all.img[active]}
           onClick={() => setImageModal(true)}
         />
         {image_all.thumb.map((thumb, index) => (
