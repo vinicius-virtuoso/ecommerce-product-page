@@ -85,6 +85,8 @@ export const OldPriced = styled.span`
   }
 `;
 
+//ggg
+
 export const BoxGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
