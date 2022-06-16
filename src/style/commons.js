@@ -14,7 +14,7 @@ export const AppComponent = styled.div`
   }
 `;
 
-export const Container = styled.section`
+export const Container = styled.div`
   width: 100%;
   max-width: 1220px;
   margin: 0 auto;

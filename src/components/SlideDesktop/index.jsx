@@ -16,7 +16,7 @@ const SlideDesktop = ({ image_all }) => {
         />
         {image_all.thumb.map((thumb, index) => (
           <ImageSmall
-            src={thumb}
+            image={thumb}
             key={thumb}
             isActive={active === index ? true : false}
             onClick={() => setActive(index)}

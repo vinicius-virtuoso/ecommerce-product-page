@@ -60,7 +60,7 @@ const SlideModal = ({ image_all, active, setActive, setImageModal }) => {
 
           {image_all.thumb.map((thumb, index) => (
             <ImageSmall
-              src={thumb}
+              image={thumb}
               key={thumb}
               isActive={activeImg === index ? true : false}
               onClick={() => setActive(index)}

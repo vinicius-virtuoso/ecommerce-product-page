@@ -33,7 +33,10 @@ const Header = () => {
       <HeaderContainer>
         <Box>
           <Bars onClick={() => setIsOpen(!isOpen)}>
-            <IconMenu src={isOpen ? close_icon : menu_icon} />
+            <IconMenu
+              src={isOpen ? close_icon : menu_icon}
+              alt={isOpen ? close_icon : menu_icon}
+            />
           </Bars>
           <Logo src={logo_img} alt="logo" />
           <Menu isOpen={isOpen}>

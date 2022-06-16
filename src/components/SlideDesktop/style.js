@@ -34,7 +34,7 @@ export const ImageSmall = styled.div`
   border-radius: 0.875rem;
   border: 0px solid transparent;
   position: relative;
-  background-image: ${(props) => `url(${props.src})`};
+  background-image: ${(props) => `url(${props.image})`};
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

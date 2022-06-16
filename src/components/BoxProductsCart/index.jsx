@@ -21,7 +21,7 @@ const BoxProductsCart = ({ product }) => {
   return (
     <Box>
       <Product>
-        <ImgProduct src={product.images.img[0]} />
+        <ImgProduct src={product.images.img[0]} alt={product.images.img[0]} />
         <TextProduct>
           <BoxDesc>
             <NameProduct>{product.title}</NameProduct>
