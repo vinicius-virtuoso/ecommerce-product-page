@@ -15,7 +15,7 @@ import {
 } from "./style";
 
 const BoxProductsCart = ({ product }) => {
-  const { removeCartItem } = useContext(CartContext);
+  const { remove_cart_item } = useContext(CartContext);
   let newPrice = product.price.toFixed(2) * (50 / 100);
 
   return (
@@ -32,7 +32,7 @@ const BoxProductsCart = ({ product }) => {
           </BoxDesc>
           <IconDelete
             src={delete_icon}
-            onClick={() => removeCartItem(product.id)}
+            onClick={() => remove_cart_item(product.id)}
           />
         </TextProduct>
       </Product>

@@ -36,10 +36,17 @@ export const Button = styled.button`
 export const FlexColumn = styled.div`
   display: flex;
   width: 100%;
+
   flex-direction: column;
   height: calc(100vh - 4.5rem);
 
   @media (min-width: 768px) {
+    max-width: 90%;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+    padding: 0 3rem;
     height: calc(100vh - 6rem);
   }
 `;

@@ -16,6 +16,7 @@ import {
   Cont,
   QuantAdd,
   Button,
+  BoxGrid,
 } from "./styled";
 import plus_icon from "../../assets/icons/icon-plus.svg";
 import minus_icon from "../../assets/icons/icon-minus.svg";
@@ -23,7 +24,7 @@ import IconCart from "../IconCart";
 
 const InfoProduct = ({ product }) => {
   const [volume, setVolume] = useState(0);
-  const { addCart } = useContext(CartContext);
+  const { add_cart } = useContext(CartContext);
 
   const addQuant = () => {
     if (volume <= 99) {
@@ -51,23 +52,25 @@ const InfoProduct = ({ product }) => {
           </ModPrice>
           <OldPriced>${product.price.toFixed(2)}</OldPriced>
         </BoxPrice>
-        <BoxQuant>
-          <QuantSub onClick={subQuant}>
-            <img src={minus_icon} alt="-" />
-          </QuantSub>
-          <Cont>{volume}</Cont>
-          <QuantAdd onClick={addQuant}>
-            <img src={plus_icon} alt="+" />
-          </QuantAdd>
-        </BoxQuant>
-        <Button
-          onClick={() =>
-            volume > 0 ? addCart({ ...product, quant: volume }) : null
-          }
-        >
-          <IconCart color="#ffffff" />
-          Add to cart
-        </Button>
+        <BoxGrid>
+          <BoxQuant>
+            <QuantSub onClick={subQuant}>
+              <img src={minus_icon} alt="-" />
+            </QuantSub>
+            <Cont>{volume}</Cont>
+            <QuantAdd onClick={addQuant}>
+              <img src={plus_icon} alt="+" />
+            </QuantAdd>
+          </BoxQuant>
+          <Button
+            onClick={() =>
+              volume > 0 ? add_cart({ ...product, quant: volume }) : null
+            }
+          >
+            <IconCart color="#ffffff" />
+            Add to cart
+          </Button>
+        </BoxGrid>
       </BoxText>
     </ContainerInfo>
   );

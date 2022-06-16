@@ -65,10 +65,6 @@ export const IconMenu = styled.img`
   position: relative;
   z-index: 999;
 `;
-export const IconCart = styled.img`
-  width: 100%;
-  height: 100%;
-`;
 
 export const BoxIcon = styled.div`
   position: relative;
@@ -192,7 +188,7 @@ export const NavLink = styled.li`
       position: absolute;
       bottom: -1px;
       left: 50%;
-      transition: all 0.2s ease-in;
+      transition: all 0.2s ease;
       transform: translateX(-50%);
     }
 
@@ -211,10 +207,14 @@ export const Link = styled.a`
   height: 100%;
   display: flex;
   align-items: center;
+  transition: all 0.2s ease;
 
   @media (min-width: 768px) {
     font-size: 1rem;
     color: var(--dark-grayish-blue);
     font-weight: 400;
+    &:hover {
+      color: var(--black);
+    }
   }
 `;
