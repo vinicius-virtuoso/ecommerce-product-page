@@ -10,13 +10,11 @@ import {
   Prev,
 } from "./style";
 
-import next_icon from "../../assets/icons/icon-next.svg";
-import prev_icon from "../../assets/icons/icon-previous.svg";
 import { ImageSmall } from "../SlideDesktop/style";
 import { useState } from "react";
 import { IconClose } from "../Icons";
 
-const SlideModal = ({ image_all, active, setActive, setImageModal }) => {
+const SlideModal = ({ image_all, setImageModal }) => {
   const [activeImg, setActiveImg] = useState(0);
 
   const slide_next = () => {
@@ -63,7 +61,7 @@ const SlideModal = ({ image_all, active, setActive, setImageModal }) => {
               image={thumb}
               key={thumb}
               isActive={activeImg === index ? true : false}
-              onClick={() => setActive(index)}
+              onClick={() => setActiveImg(index)}
             />
           ))}
         </GridSlideModal>

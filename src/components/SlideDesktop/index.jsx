@@ -24,12 +24,7 @@ const SlideDesktop = ({ image_all }) => {
         ))}
       </SlideGrid>
       {imageModal && (
-        <SlideModal
-          image_all={image_all}
-          active={active}
-          setActive={setActive}
-          setImageModal={setImageModal}
-        />
+        <SlideModal image_all={image_all} setImageModal={setImageModal} />
       )}
     </>
   );
